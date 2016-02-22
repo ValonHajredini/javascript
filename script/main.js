@@ -1,4 +1,10 @@
 //-----------------------------------------------------------------
+//20 Primitive types.
+//...
+//Javascript ka vetem ni tim numerik edhe asht floating point number
+
+
+//-----------------------------------------------------------------
 //19 Conceptual Aside (Types and javascript)
 //...
 // Javascript ka dinamik tipet e variablave

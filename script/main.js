@@ -1,15 +1,27 @@
 //-----------------------------------------------------------------
-//16. The Scope Chain
-function b(){
-    console.log(myVar);
+//17. Scope, ES6 and let
+var a = 2;
+var b = 5;
+if(a< b){
+    let c = true;
 }
-function a(){
+// let asht pothuaj si var ne javascript es6
+console.log(c);// Returns error
+let d = 11;
+console.log(d); // kthen vler
 
-    var myVar =2;
-    b();
-}
-var myVar = 1;
-a();
+//-----------------------------------------------------------------
+//16. The Scope Chain
+//function b(){
+//    console.log(myVar);
+//}
+//function a(){
+//
+//    var myVar =2;
+//    b();
+//}
+//var myVar = 1;
+//a();
 
 //----------------------------------------------------------------
 

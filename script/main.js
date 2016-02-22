@@ -1,7 +1,18 @@
 //-----------------------------------------------------------------
-//21. Conceptual Aside
-var a = 3 > 4;
+// 22. Operator Precedence and Associatinity
+
+var aa = 3 + 4 * 5;
+console.log(aa);
+var a = 2, b = 3, c = 4;
+a = b = c;
 console.log(a);
+console.log(b);
+console.log(c);
+
+//-----------------------------------------------------------------
+//21. Conceptual Aside
+//var a = 3 > 4;
+//console.log(a);
 
 
 

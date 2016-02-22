@@ -1,4 +1,28 @@
 //-----------------------------------------------------------------
+// 25 Comparison Operation
+console.log(3 < 2 < 1); // 3 < 2 = false => false < 1 => false = 0 => 0< 1 = true
+console.log(1<2<2);
+Number(true); // 1
+Number(false); // 0
+//null == 0 => false
+//nul < 1 => true
+//"" == 0 => true && "" == false => true
+var a = 0 ;
+var b = false;
+if (a === b){
+    console.log('They are equal!');
+}else {
+    console.log('Nope, not equal!');
+}
+if (a == b){
+    console.log('They are equal!');
+}else {
+    console.log('Nope, not equal!');
+}
+
+
+
+//-----------------------------------------------------------------
 // 24 Conceptual Aside
 
 //var a = 1+'2';

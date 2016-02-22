@@ -1,14 +1,33 @@
 //-----------------------------------------------------------------
-//17. Scope, ES6 and let
-var a = 2;
-var b = 5;
-if(a< b){
-    let c = true;
+//18. What about Asynchronous Callback
+function waitTheeSeconds(){
+    var ms = 3000 + new Date().getTime();
+    while(new Date() < ms){}
+    console.log("Finished f unciton");
 }
-// let asht pothuaj si var ne javascript es6
-console.log(c);// Returns error
-let d = 11;
-console.log(d); // kthen vler
+
+function clickHendler(){
+    console.log('Click event!');
+
+}
+// Listening for the click event
+document.addEventListener('click', clickHendler);
+
+
+waitTheeSeconds();
+console.log('finished execution');
+
+//-----------------------------------------------------------------
+////17. Scope, ES6 and let
+//var a = 2;
+//var b = 5;
+//if(a< b){
+//    let c = true;
+//}
+//// let asht pothuaj si var ne javascript es6
+//console.log(c);// Returns error
+//let d = 11;
+//console.log(d); // kthen vler
 
 //-----------------------------------------------------------------
 //16. The Scope Chain

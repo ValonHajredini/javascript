@@ -1,4 +1,11 @@
 //-----------------------------------------------------------------
+//21. Conceptual Aside
+var a = 3 > 4;
+console.log(a);
+
+
+
+//-----------------------------------------------------------------
 //20 Primitive types.
 //...
 //Javascript ka vetem ni tim numerik edhe asht floating point number

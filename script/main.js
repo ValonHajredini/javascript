@@ -1,21 +1,27 @@
 //-----------------------------------------------------------------
+//19 Conceptual Aside (Types and javascript)
+//...
+// Javascript ka dinamik tipet e variablave
+
+
+//-----------------------------------------------------------------
 //18. What about Asynchronous Callback
-function waitTheeSeconds(){
-    var ms = 3000 + new Date().getTime();
-    while(new Date() < ms){}
-    console.log("Finished f unciton");
-}
-
-function clickHendler(){
-    console.log('Click event!');
-
-}
-// Listening for the click event
-document.addEventListener('click', clickHendler);
-
-
-waitTheeSeconds();
-console.log('finished execution');
+//function waitTheeSeconds(){
+//    var ms = 3000 + new Date().getTime();
+//    while(new Date() < ms){}
+//    console.log("Finished f unciton");
+//}
+//
+//function clickHendler(){
+//    console.log('Click event!');
+//
+//}
+//// Listening for the click event
+//document.addEventListener('click', clickHendler);
+//
+//
+//waitTheeSeconds();
+//console.log('finished execution');
 
 //-----------------------------------------------------------------
 ////17. Scope, ES6 and let

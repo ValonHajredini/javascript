@@ -1,4 +1,14 @@
 //-----------------------------------------------------------------
+//28. Default value
+
+//function greet(name){
+//    name = name || '<Your name here>' // merr vleren ecila nuk asht null nese nuk ka name vler
+//    console.log("Hello "+name);
+//};
+//greet();
+
+
+//-----------------------------------------------------------------
 //26. Existence and Booleans
 
 //var a;

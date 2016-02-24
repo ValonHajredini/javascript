@@ -1,4 +1,32 @@
 //-----------------------------------------------------------------
+////31. Object and object Literals
+//var person = {
+//    firstname: 'Valon',
+//    lastname: 'Hajredini',
+//    address:{
+//        street: "111 MAin St.",
+//        city: "New Yourk",
+//        state: "NY"
+//    }
+//};
+//function greet(person){
+//    console.log('HI '+ person.firstname);
+//}
+//greet(person);
+//greet({
+//    firstname: "Vali",
+//    lastname: "hajd"
+//});
+//person.address2 = {
+//    street: "333 Second St."
+//}
+//
+//console.log(person);
+//console.log(person.address.city);
+//
+
+
+//-----------------------------------------------------------------
 //30. Objektet and de dot
 //var person = new Object();
 //person["firstname"] = "Tony";

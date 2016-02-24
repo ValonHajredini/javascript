@@ -1,7 +1,24 @@
 //-----------------------------------------------------------------
+//30. Objektet and de dot
+//var person = new Object();
+//person["firstname"] = "Tony";
+//person["lastname"] = "Alicea";
+//var firstNameProperty = "firstname";
+//
+//console.log(person);
+//console.log(person[firstNameProperty]);
+//
+//console.log(person.firstname);
+//console.log(person.lastname);
+//person.address = new Object();
+//person.address.street = "11 MainSt.";
+//person.address.city = "New yourk";
+//person.address.state = "NY";
+//console.log(person.address.street);
+//-----------------------------------------------------------------
 //29. Framework Aside
 
-console.log(libraryName);
+//console.log(libraryName);
 
 //-----------------------------------------------------------------
 //28. Default value

@@ -1,13 +1,24 @@
 //-----------------------------------------------------------------
-//33. JSON Object Literals
-var objectLiteral ={
-    firstname: 'Mary',
-    isAprogramer: true
+// 34. Functiones are Object
+function greet (){
+    console.log('hi');
 }
-var json = '{"firstName": "Valon", "isAProgramer": true}';
-console.log(JSON.stringify(objectLiteral));
-var jsonValue = JSON.parse(json)
-console.log(jsonValue);
+greet.languige = "English";
+console.log(greet);
+console.log(greet.languige);
+
+
+
+//-----------------------------------------------------------------
+//33. JSON Object Literals
+//var objectLiteral ={
+//    firstname: 'Mary',
+//    isAprogramer: true
+//}
+//var json = '{"firstName": "Valon", "isAProgramer": true}';
+//console.log(JSON.stringify(objectLiteral));
+//var jsonValue = JSON.parse(json)
+//console.log(jsonValue);
 //-----------------------------------------------------------------
 //32. Framework aside
 //var greet = "Hello";

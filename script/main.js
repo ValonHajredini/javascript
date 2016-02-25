@@ -1,14 +1,37 @@
 //-----------------------------------------------------------------
-// 34. Functiones are Object
-function greet (){
+//35. Function Statments and Function Expression
+greet();
+function greet(){
     console.log('hi');
 }
-greet.languige = "English";
-console.log(greet);
-console.log(greet.languige);
+var ananumisGreet = function (){
+    console.log('hi');
+}
+ananumisGreet();
+var funk = {};
+funk.setName = function(){
+    return "Valon";
+}
+funk.greet = function(name){
+    console.log("Hello "+name);
+}
 
-
-
+console.log(funk.setName());
+funk.greet(funk.setName());
+function log(a){
+    console.log(function(){
+        alert("Hello");
+    });
+}
+log(3);
+//-----------------------------------------------------------------
+// 34. Functiones are Object
+//function greet (){
+//    console.log('hi');
+//}
+//greet.languige = "English";
+//console.log(greet);
+//console.log(greet.languige);
 //-----------------------------------------------------------------
 //33. JSON Object Literals
 //var objectLiteral ={

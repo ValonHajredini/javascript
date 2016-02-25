@@ -1,4 +1,14 @@
 //-----------------------------------------------------------------
+//33. JSON Object Literals
+var objectLiteral ={
+    firstname: 'Mary',
+    isAprogramer: true
+}
+var json = '{"firstName": "Valon", "isAProgramer": true}';
+console.log(JSON.stringify(objectLiteral));
+var jsonValue = JSON.parse(json)
+console.log(jsonValue);
+//-----------------------------------------------------------------
 //32. Framework aside
 //var greet = "Hello";
 //var greet = "Hola";

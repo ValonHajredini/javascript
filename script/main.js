@@ -1,4 +1,18 @@
 //-----------------------------------------------------------------
+//32. Framework aside
+//var greet = "Hello";
+//var greet = "Hola";
+//var english ={};
+//var spanish = {};
+//english = {greating: {greet: "hello "}}
+//english.greet = "Hello";
+//spanish.greet = "Hola";
+//
+//
+//console.log(english.greating.greet);
+
+
+//-----------------------------------------------------------------
 ////31. Object and object Literals
 //var person = {
 //    firstname: 'Valon',

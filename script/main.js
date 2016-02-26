@@ -1,29 +1,73 @@
 //-----------------------------------------------------------------
-//35. Function Statments and Function Expression
-greet();
-function greet(){
-    console.log('hi');
+//36. Conceptual aside
+// Bay value (primitive)
+var a = 3;
+var b;
+b = a;
+a = 2;
+console.log(a);
+console.log(b);
+// By reference (All objects)
+var c = {
+    gretting: "hi"
 }
-var ananumisGreet = function (){
-    console.log('hi');
+var d;
+d = c;
+c.gretting = "Hello";
+console.log(d);
+// by reference
+function changeGreteng(obj){
+    obj.gretting = 'hola';
 }
-ananumisGreet();
-var funk = {};
-funk.setName = function(){
-    return "Valon";
-}
-funk.greet = function(name){
-    console.log("Hello "+name);
-}
+changeGreteng(d);
+console.log(d);
+console.log(c);
+c ={ gretting: "Tungjatjeta" }
+console.log(d);
+console.log(c);
+//-----------------------------------------------------------------
+// Inter mision
+//function htmlT(tagN,  tagC, attr1, attr2, attr3){
+//    var tag ="<"+tagN+" "+attr1+" "+attr2+" "+attr3+">"+ tagC + "</"+tagN + ">";
+//    return tag;
+//}
+//document.write(htmlT("p",'heelo', 'style="color:green"'));
+//function o(){
+//    console.log("hello");
+//}
 
-console.log(funk.setName());
-funk.greet(funk.setName());
-function log(a){
-    console.log(function(){
-        alert("Hello");
-    });
-}
-log(3);
+
+//$('111').innerHTML= "Hello from id";
+//function $(id) {
+//    var id = document.getElementById(id).value;
+//    return id;
+//}
+//-----------------------------------------------------------------
+//35. Function Statments and Function Expression
+//greet();
+//function greet(){
+//    console.log('hi');
+//}
+//var ananumisGreet = function (){
+//    console.log('hi');
+//}
+//ananumisGreet();
+//var funk = {};
+//funk.setName = function(){
+//    return "Valon";
+//}
+//funk.greet = function(name){
+//    console.log("Hello "+name);
+//}
+//
+//console.log(funk.setName());
+//funk.greet(funk.setName());
+//function log(a){
+//    console.log(function(){
+//        alert("Hello");
+//    });
+//}
+//log(3);
 //-----------------------------------------------------------------
 // 34. Functiones are Object
 //function greet (){

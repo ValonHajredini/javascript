@@ -1,4 +1,16 @@
 //-----------------------------------------------------------------
+//42.Dangerus Aside (Automatic Semicolons Insertion)
+function getPerson(){
+    return {
+        fname: 'Tony'
+    }
+}
+console.log(getPerson());
+
+
+
+
+//-----------------------------------------------------------------
 //41. Conceptual Aside (Syntax DOMParser)
 
 

@@ -1,30 +1,56 @@
 //-----------------------------------------------------------------
+//37. Object Function and 'this'
+function a(){
+    console.log(this);
+}
+function b(){
+    console.log(this);
+}
+a();
+b();
+var c = {
+    name: 'the c object',
+    surname: 'Hajredini',
+    log: function(){
+        var self = this;
+        this.name = "Valon ";
+        console.log(this.surname)
+        var setName = function(NewName){
+            self.name = NewName;
+        }
+        setName("Vhajredini");
+        console.log(self)
+    }
+}
+c.log()
+console.log(c.name);
+//-----------------------------------------------------------------
 //36. Conceptual aside
 // Bay value (primitive)
-var a = 3;
-var b;
-b = a;
-a = 2;
-console.log(a);
-console.log(b);
-// By reference (All objects)
-var c = {
-    gretting: "hi"
-}
-var d;
-d = c;
-c.gretting = "Hello";
-console.log(d);
-// by reference
-function changeGreteng(obj){
-    obj.gretting = 'hola';
-}
-changeGreteng(d);
-console.log(d);
-console.log(c);
-c ={ gretting: "Tungjatjeta" }
-console.log(d);
-console.log(c);
+//var a = 3;
+//var b;
+//b = a;
+//a = 2;
+//console.log(a);
+//console.log(b);
+//// By reference (All objects)
+//var c = {
+//    gretting: "hi"
+//}
+//var d;
+//d = c;
+//c.gretting = "Hello";
+//console.log(d);
+//// by reference
+//function changeGreteng(obj){
+//    obj.gretting = 'hola';
+//}
+//changeGreteng(d);
+//console.log(d);
+//console.log(c);
+//c ={ gretting: "Tungjatjeta" }
+//console.log(d);
+//console.log(c);
 //-----------------------------------------------------------------
 // Inter mision
 //function htmlT(tagN,  tagC, attr1, attr2, attr3){

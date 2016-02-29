@@ -1,25 +1,29 @@
 //-----------------------------------------------------------------
+//41. Conceptual Aside (Syntax DOMParser)
+
+
+
 //40. Framework aside
-function greet(fname , lname, lang){
-     lang = lang || 'en';
-    if (lang === 'en'){
-        console.log('hello '+fname + ' '+ lname);
-    }else if(lang === 'es'){
-        console.log('Hola '+fname + ' '+ lname);
-
-    }
-}
-function greetEnglish(fname, lname){
-    console.log('hello '+fname + ' '+ lname);
-
-}
-function greetSpanish(fname, lname){
-    console.log('Hola '+fname + ' '+ lname);
-
-}
-greetEnglish('Valon', 'Hajredini');
-greetSpanish('Valon', 'Hajredini');
-
+//function greet(fname , lname, lang){
+//     lang = lang || 'en';
+//    if (lang === 'en'){
+//        console.log('hello '+fname + ' '+ lname);
+//    }else if(lang === 'es'){
+//        console.log('Hola '+fname + ' '+ lname);
+//
+//    }
+//}
+//function greetEnglish(fname, lname){
+//    console.log('hello '+fname + ' '+ lname);
+//
+//}
+//function greetSpanish(fname, lname){
+//    console.log('Hola '+fname + ' '+ lname);
+//
+//}
+//greetEnglish('Valon', 'Hajredini');
+//greetSpanish('Valon', 'Hajredini');
+//
 
 
 

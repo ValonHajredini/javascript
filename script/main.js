@@ -1,22 +1,47 @@
 //-----------------------------------------------------------------
-//39. Arguments and spread
-function greet(firstname, lastname, languige,){
-    languige = languige || 'en';
-    if(arguments.length === 0){
-        console.log("Mising parameters");
-    }else{
-    console.log(firstname);
-    console.log(lastname);
-    console.log(languige);
-    console.log(arguments);
-    console.log(arguments[0]);
-    console.log('-------');
+//40. Framework aside
+function greet(fname , lname, lang){
+     lang = lang || 'en';
+    if (lang === 'en'){
+        console.log('hello '+fname + ' '+ lname);
+    }else if(lang === 'es'){
+        console.log('Hola '+fname + ' '+ lname);
+
     }
 }
-greet();
-greet('jhon');
-greet('jhon', 'doe');
-greet('jhon', 'doe', 'AL');
+function greetEnglish(fname, lname){
+    console.log('hello '+fname + ' '+ lname);
+
+}
+function greetSpanish(fname, lname){
+    console.log('Hola '+fname + ' '+ lname);
+
+}
+greetEnglish('Valon', 'Hajredini');
+greetSpanish('Valon', 'Hajredini');
+
+
+
+
+//-----------------------------------------------------------------
+//39. Arguments and spread
+//function greet(firstname, lastname, languige,){
+//    languige = languige || 'en';
+//    if(arguments.length === 0){
+//        console.log("Mising parameters");
+//    }else{
+//    console.log(firstname);
+//    console.log(lastname);
+//    console.log(languige);
+//    console.log(arguments);
+//    console.log(arguments[0]);
+//    console.log('-------');
+//    }
+//}
+//greet();
+//greet('jhon');
+//greet('jhon', 'doe');
+//greet('jhon', 'doe', 'AL');
 
 
 

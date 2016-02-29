@@ -1,14 +1,32 @@
 //-----------------------------------------------------------------
-//42.Dangerus Aside (Automatic Semicolons Insertion)
-function getPerson(){
-    return {
-        fname: 'Tony'
-    }
+//43. Framework aside (Wheitspace)
+var
+    //First name of  the person
+    firstname,
+    // Last name of the person
+    lastname,
+    //Languige of the person
+    languige;
+firstname = "Valon";
+lastname = "Hajredini";
+languige = "Albanien";
+var person = {
+
+    //Coment inside of a object
+    fname: 'valon',
+    lname: 'Hajredini'
 }
-console.log(getPerson());
+console.log(person);
 
 
-
+//-----------------------------------------------------------------
+//42.Dangerus Aside (Automatic Semicolons Insertion)
+//function getPerson(){
+//    return {
+//        fname: 'Tony'
+//    }
+//}
+//console.log(getPerson());
 
 //-----------------------------------------------------------------
 //41. Conceptual Aside (Syntax DOMParser)

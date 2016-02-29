@@ -1,29 +1,50 @@
 //-----------------------------------------------------------------
+//38.Conceptual Aside
+//var arr = new Array();
+var arr = [];
+arr = [1,2,3];
+arr = [
+    false,
+    {
+        name: 'Valon',
+        addres :'111 Man St.'
+    },
+    function (name){
+        var greeting = "Hello ";
+        console.log(greeting + name);
+    },
+    "Hello"
+];
+console.log(arr);
+arr[2](arr[1].name);
+
+
+//-----------------------------------------------------------------
 //37. Object Function and 'this'
-function a(){
-    console.log(this);
-}
-function b(){
-    console.log(this);
-}
-a();
-b();
-var c = {
-    name: 'the c object',
-    surname: 'Hajredini',
-    log: function(){
-        var self = this;
-        this.name = "Valon ";
-        console.log(this.surname)
-        var setName = function(NewName){
-            self.name = NewName;
-        }
-        setName("Vhajredini");
-        console.log(self)
-    }
-}
-c.log()
-console.log(c.name);
+//function a(){
+//    console.log(this);
+//}
+//function b(){
+//    console.log(this);
+//}
+//a();
+//b();
+//var c = {
+//    name: 'the c object',
+//    surname: 'Hajredini',
+//    log: function(){
+//        var self = this;
+//        this.name = "Valon ";
+//        console.log(this.surname)
+//        var setName = function(NewName){
+//            self.name = NewName;
+//        }
+//        setName("Vhajredini");
+//        console.log(self)
+//    }
+//}
+//c.log()
+//console.log(c.name);
 //-----------------------------------------------------------------
 //36. Conceptual aside
 // Bay value (primitive)

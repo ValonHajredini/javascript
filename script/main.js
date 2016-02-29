@@ -1,22 +1,45 @@
 //-----------------------------------------------------------------
+//39. Arguments and spread
+function greet(firstname, lastname, languige,){
+    languige = languige || 'en';
+    if(arguments.length === 0){
+        console.log("Mising parameters");
+    }else{
+    console.log(firstname);
+    console.log(lastname);
+    console.log(languige);
+    console.log(arguments);
+    console.log(arguments[0]);
+    console.log('-------');
+    }
+}
+greet();
+greet('jhon');
+greet('jhon', 'doe');
+greet('jhon', 'doe', 'AL');
+
+
+
+
+//-----------------------------------------------------------------
 //38.Conceptual Aside
 //var arr = new Array();
-var arr = [];
-arr = [1,2,3];
-arr = [
-    false,
-    {
-        name: 'Valon',
-        addres :'111 Man St.'
-    },
-    function (name){
-        var greeting = "Hello ";
-        console.log(greeting + name);
-    },
-    "Hello"
-];
-console.log(arr);
-arr[2](arr[1].name);
+//var arr = [];
+//arr = [1,2,3];
+//arr = [
+//    false,
+//    {
+//        name: 'Valon',
+//        addres :'111 Man St.'
+//    },
+//    function (name){
+//        var greeting = "Hello ";
+//        console.log(greeting + name);
+//    },
+//    "Hello"
+//];
+//console.log(arr);
+//arr[2](arr[1].name);
 
 
 //-----------------------------------------------------------------

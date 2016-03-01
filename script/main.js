@@ -1,11 +1,23 @@
 //-----------a------------------------------------------------------
+//46. Understending Closures
+function greet(whattosay){
+
+    return function(name){
+
+        console.log(whattosay + ' ' + name);
+    }
+}
+var sayHi = greet('Hi');
+sayHi('Valon');
+
+//-----------a------------------------------------------------------
 //45 Framework Aside (IIFE and safe code )
-(function(global, name){
-    var greeting = "Hello ";
-    global.greeting = "Tung";
-      console.log(greeting + name);
-}(window, "VALon Hajredini")); //IIFE
-console.log(greeting);
+//(function(global, name){
+//    var greeting = "Hello ";
+//    global.greeting = "Tung";
+//      console.log(greeting + name);
+//}(window, "VALon Hajredini")); //IIFE
+//console.log(greeting);
 
 
 

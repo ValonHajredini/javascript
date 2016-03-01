@@ -1,14 +1,39 @@
 //-----------a------------------------------------------------------
-//46. Understending Closures
-function greet(whattosay){
+//47. Understending Clouser (part 2)
+function buildFunctions(){
+    var arr = [];
+    for(var i = 0; i < 3; i++){
 
-    return function(name){
-
-        console.log(whattosay + ' ' + name);
+        arr.push(
+            (function(j){
+                return function(){
+                    console.log(j);
+                }
+            })(i)
+        )
     }
+    return arr;
 }
-var sayHi = greet('Hi');
-sayHi('Valon');
+var fs = buildFunctions();
+fs[0]();
+fs[1]();
+fs[2]();
+
+
+
+
+
+//-----------a------------------------------------------------------
+//46. Understending Closures
+//function greet(whattosay){
+//
+//    return function(name){
+//
+//        console.log(whattosay + ' ' + name);
+//    }
+//}
+//var sayHi = greet('Hi');
+//sayHi('Valon');
 
 //-----------a------------------------------------------------------
 //45 Framework Aside (IIFE and safe code )

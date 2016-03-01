@@ -1,22 +1,64 @@
+//-----------a------------------------------------------------------
+//45 Framework Aside (IIFE and safe code )
+(function(global, name){
+    var greeting = "Hello ";
+    global.greeting = "Tung";
+      console.log(greeting + name);
+}(window, "VALon Hajredini")); //IIFE
+console.log(greeting);
+
+
+
+
+
+//-----------------------------------------------------------------
+//44. immediately Invoked Function Expression
+
+//Function Statment
+//function greet (name){
+//    console.log("Hello "+name);
+//};
+//greet("Valon");
+//
+//
+////Function expression
+//var greetFunk = function(name){
+//    console.log("Hello "+name);
+//};
+//greetFunk("Valon");
+//
+//// Using an Immediatly Invoking Function Expression
+//var greetFunk = function(name){
+//    return "Hello "+name;
+//}("VALON");
+//
+//console.log(greetFunk);
+//
+//
+//
+//(function(name){
+//     console.log( 'Hello '+ name);
+// }("VAli"));
+
 //-----------------------------------------------------------------
 //43. Framework aside (Wheitspace)
-var
-    //First name of  the person
-    firstname,
-    // Last name of the person
-    lastname,
-    //Languige of the person
-    languige;
-firstname = "Valon";
-lastname = "Hajredini";
-languige = "Albanien";
-var person = {
-
-    //Coment inside of a object
-    fname: 'valon',
-    lname: 'Hajredini'
-}
-console.log(person);
+//var
+//    //First name of  the person
+//    firstname,
+//    // Last name of the person
+//    lastname,
+//    //Languige of the person
+//    languige;
+//firstname = "Valon";
+//lastname = "Hajredini";
+//languige = "Albanien";
+//var person = {
+//
+//    //Coment inside of a object
+//    fname: 'valon',
+//    lname: 'Hajredini'
+//}
+//console.log(person);
 
 
 //-----------------------------------------------------------------

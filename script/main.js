@@ -1,24 +1,69 @@
 //-----------a------------------------------------------------------
-//49. Closures and Callback
-function sayHiLater(){
-    var greeting = 'Hi';
-    setTimeout(function(){
-        console.log(greeting);
-    },3000);
+//50. call(), apply(), bind()
+var person = {
+    fname: 'Valon',
+    lname: 'Hajredini',
+    getFullName(){
+        var fullname = this.fname + ' ' + this.lname;
+        return fullname;
+    }
 }
-sayHiLater();
+//console.log(person.getFullName());
+var logName = function(lang1, lang2){
+    console.log("logged: "+ this.getFullName());
+    console.log("Arguments: "+ lang1+' '+ lang2)
+    console.log("---------------");
+}
+var logPersonName = logName.bind(person);
+logPersonName('en');
 
-function tellMeWenDon(callback){
-    var a = 1000;
-    var b = 2000;
-    callback();
+logName.call(person, 'en', 'es');
+logName.apply(person , ['en', 'es']);
+
+(function(lang1, lang2){
+    console.log("logged: "+ this.getFullName());
+    console.log("Arguments: "+ lang1+' '+ lang2)
+    console.log("--------+++-------");
+}.apply(person, ['en','es']));
+
+var person2 = {
+    fname: 'Joe',
+    lname: 'Doe'
 }
-tellMeWenDon(function(){
-    console.log('I am done');
-});
-tellMeWenDon(function(){
-    console.log('All done');
-});
+
+console.log(person.getFullName.apply(person2));
+
+// Function Currying
+function multiply(a,b){
+    return a*b;
+}
+
+var multipleByTwo = multiply.bind(this, 2);
+console.log(multipleByTwo(4));
+var multipleByThre = multiply.bind(this, 3);
+console.log(multipleByThre(4));
+
+//-----------a------------------------------------------------------
+//49. Closures and Callback
+//function sayHiLater(){
+//    var greeting = 'Hi';
+//    setTimeout(function(){
+//        console.log(greeting);
+//    },3000);
+//}
+//sayHiLater();
+//
+//function tellMeWenDon(callback){
+//    var a = 1000;
+//    var b = 2000;
+//    callback();
+//}
+//tellMeWenDon(function(){
+//    console.log('I am done');
+//});
+//tellMeWenDon(function(){
+//    console.log('All done');
+//});
 
 //-----------a------------------------------------------------------
 //48. Framework aside (Function Factories)

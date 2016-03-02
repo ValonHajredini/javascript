@@ -1,18 +1,40 @@
 //-----------a------------------------------------------------------
-//48. Framework aside (Function Factories)
-function makeGreeting(languige){
-    return function (fname, lname){
-        if(languige === 'en'){
-            console.log('Hello ' + fname + ' ' + lname );
-        }else if(languige === 'es'){
-            console.log('Hola '+ fname + ' '+ lname);
-        }
-    }
+//49. Closures and Callback
+function sayHiLater(){
+    var greeting = 'Hi';
+    setTimeout(function(){
+        console.log(greeting);
+    },3000);
 }
-var  greetEnglish = makeGreeting('en');
-var greetSpanish = makeGreeting('es');
-console.log(greetEnglish('Valon', 'Hajredini'));
-console.log(greetSpanish('Valon', 'Hajredini'));
+sayHiLater();
+
+function tellMeWenDon(callback){
+    var a = 1000;
+    var b = 2000;
+    callback();
+}
+tellMeWenDon(function(){
+    console.log('I am done');
+});
+tellMeWenDon(function(){
+    console.log('All done');
+});
+
+//-----------a------------------------------------------------------
+//48. Framework aside (Function Factories)
+//function makeGreeting(languige){
+//    return function (fname, lname){
+//        if(languige === 'en'){
+//            console.log('Hello ' + fname + ' ' + lname );
+//        }else if(languige === 'es'){
+//            console.log('Hola '+ fname + ' '+ lname);
+//        }
+//    }
+//}
+//var  greetEnglish = makeGreeting('en');
+//var greetSpanish = makeGreeting('es');
+//console.log(greetEnglish('Valon', 'Hajredini'));
+//console.log(greetSpanish('Valon', 'Hajredini'));
 
 
 //-----------a------------------------------------------------------

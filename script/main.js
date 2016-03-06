@@ -1,47 +1,90 @@
 //-----------a------------------------------------------------------
+//51. Functional Programing
+
+
+function mapForEach(arr,fn){
+    var newArr = [];
+    for(var i = 0; i< arr.length ; i++){
+        newArr.push(
+            fn(arr[i])
+        )
+    };
+    return newArr;
+}
+var arr1 = [1,2,3]
+console.log(arr1);
+var arr2 = mapForEach(arr1, function(item){
+   return item*2;
+});
+//for (var i=0 ; i < arr1.length; i++){
+//    arr2.push(arr1[i]*2);
+//}
+console.log(arr2);
+
+var arr3 = mapForEach(arr1, function(item){
+    return "{"+item+ "}";
+});
+console.log(arr3);
+
+
+var checkPastLimit = function(limiter, item){
+    return item > limiter;
+}
+var arr4 = mapForEach(arr1, checkPastLimit.bind(this, 1));
+console.log(arr4);
+
+var checkLimitPastSimplefide = function (limiter){
+    return function(limiter, item){
+        return item > limiter;
+    }.bind(this, limiter);
+};
+var arr5 = mapForEach(arr1, checkLimitPastSimplefide(3))
+console.log(arr5);
+
+//-----------a------------------------------------------------------
 //50. call(), apply(), bind()
-var person = {
-    fname: 'Valon',
-    lname: 'Hajredini',
-    getFullName(){
-        var fullname = this.fname + ' ' + this.lname;
-        return fullname;
-    }
-}
-//console.log(person.getFullName());
-var logName = function(lang1, lang2){
-    console.log("logged: "+ this.getFullName());
-    console.log("Arguments: "+ lang1+' '+ lang2)
-    console.log("---------------");
-}
-var logPersonName = logName.bind(person);
-logPersonName('en');
-
-logName.call(person, 'en', 'es');
-logName.apply(person , ['en', 'es']);
-
-(function(lang1, lang2){
-    console.log("logged: "+ this.getFullName());
-    console.log("Arguments: "+ lang1+' '+ lang2)
-    console.log("--------+++-------");
-}.apply(person, ['en','es']));
-
-var person2 = {
-    fname: 'Joe',
-    lname: 'Doe'
-}
-
-console.log(person.getFullName.apply(person2));
-
-// Function Currying
-function multiply(a,b){
-    return a*b;
-}
-
-var multipleByTwo = multiply.bind(this, 2);
-console.log(multipleByTwo(4));
-var multipleByThre = multiply.bind(this, 3);
-console.log(multipleByThre(4));
+//var person = {
+//    fname: 'Valon',
+//    lname: 'Hajredini',
+//    getFullName(){
+//        var fullname = this.fname + ' ' + this.lname;
+//        return fullname;
+//    }
+//}
+////console.log(person.getFullName());
+//var logName = function(lang1, lang2){
+//    console.log("logged: "+ this.getFullName());
+//    console.log("Arguments: "+ lang1+' '+ lang2)
+//    console.log("---------------");
+//}
+//var logPersonName = logName.bind(person);
+//logPersonName('en');
+//
+//logName.call(person, 'en', 'es');
+//logName.apply(person , ['en', 'es']);
+//
+//(function(lang1, lang2){
+//    console.log("logged: "+ this.getFullName());
+//    console.log("Arguments: "+ lang1+' '+ lang2)
+//    console.log("--------+++-------");
+//}.apply(person, ['en','es']));
+//
+//var person2 = {
+//    fname: 'Joe',
+//    lname: 'Doe'
+//}
+//
+//console.log(person.getFullName.apply(person2));
+//
+//// Function Currying
+//function multiply(a,b){
+//    return a*b;
+//}
+//
+//var multipleByTwo = multiply.bind(this, 2);
+//console.log(multipleByTwo(4));
+//var multipleByThre = multiply.bind(this, 3);
+//console.log(multipleByThre(4));
 
 //-----------a------------------------------------------------------
 //49. Closures and Callback

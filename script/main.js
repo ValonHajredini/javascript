@@ -1,11 +1,34 @@
-//-----------a------------------------------------------------------
+//-----------------------------------------------------------------
+//54. Understending Prototype
+var person = {
+    fname: 'Default',
+    lname: 'Default',
+    getFullName: function(){
+        return this.fname + ' ' + this.lname;
+    }
+}
+var jon = {
+    fname: 'Jon',
+    lname: 'Doe'
+}
+// Dont do this EVER !
+
+jon.__proto__ = person;
+
+console.log(jon.getFullName());
+var jani = {
+    fname: 'Jane'
+}
+jani.__proto__ = person;
+console.log(jani.getFullName());
+//-----------------------------------------------------------------
 //52. Fun programing part 2
-var arr1 = [1,2,3]
-var arr6 = _.map(arr1, function (item){ return item * 3});
-console.log(arr6);
-var arr7 = _.filter([2,3,4,5,6,7], function(item){return item % 2 === 0})
-console.log(arr7);
-//-----------a------------------------------------------------------
+//var arr1 = [1,2,3]
+//var arr6 = _.map(arr1, function (item){ return item * 3});
+//console.log(arr6);
+//var arr7 = _.filter([2,3,4,5,6,7], function(item){return item % 2 === 0})
+//console.log(arr7);
+//-----------------------------------------------------------------
 //51. Functional Programing part 1
 
 //function mapForEach(arr,fn){
@@ -47,7 +70,7 @@ console.log(arr7);
 //var arr5 = mapForEach(arr1, checkLimitPastSimplefide(3))
 //console.log(arr5);
 
-//-----------a------------------------------------------------------
+//-----------------------------------------------------------------
 //50. call(), apply(), bind()
 //var person = {
 //    fname: 'Valon',
@@ -92,7 +115,7 @@ console.log(arr7);
 //var multipleByThre = multiply.bind(this, 3);
 //console.log(multipleByThre(4));
 
-//-----------a------------------------------------------------------
+//-----------------------------------------------------------------
 //49. Closures and Callback
 //function sayHiLater(){
 //    var greeting = 'Hi';
@@ -114,7 +137,7 @@ console.log(arr7);
 //    console.log('All done');
 //});
 
-//-----------a------------------------------------------------------
+//-----------------------------------------------------------------
 //48. Framework aside (Function Factories)
 //function makeGreeting(languige){
 //    return function (fname, lname){
@@ -131,7 +154,7 @@ console.log(arr7);
 //console.log(greetSpanish('Valon', 'Hajredini'));
 
 
-//-----------a------------------------------------------------------
+//-----------------------------------------------------------------
 //47. Understending Clouser (part 2)
 //function buildFunctions(){
 //    var arr = [];
@@ -153,7 +176,7 @@ console.log(arr7);
 //fs[2]();
 
 
-//-----------a------------------------------------------------------
+//-----------------------------------------------------------------
 //46. Understending Closures
 //function greet(whattosay){
 //
@@ -165,7 +188,7 @@ console.log(arr7);
 //var sayHi = greet('Hi');
 //sayHi('Valon');
 
-//-----------a------------------------------------------------------
+//-----------------------------------------------------------------
 //45 Framework Aside (IIFE and safe code )
 //(function(global, name){
 //    var greeting = "Hello ";

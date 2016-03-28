@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------
-//54. Understending Prototype
+//54. Understending Prototype     
 var person = {
     fname: 'Default',
     lname: 'Default',
